@@ -31,21 +31,19 @@ const Todos = () => {
     };
 
     return (
-        <div className="flex flex-col w-full py-10">
-            <div className="flex flex-row justify-center items-center m-auto">
-                <div className="flex flex-col m-auto">
-                    <img src="/todosImg.png" alt="todo-img" 
-                        className="w-[170px] h-[170px] rounded-[45%] m-auto"  
-                    />
-                    <h1 className="text-center text-4xl text-gray-600 my-3 font-bold">ToDo List</h1>
-                    <p className="text-center text-xl text-gray-600 w-[50%] m-auto font-bold mb-3">
-                        This app is usefull for organize your tasks 
-                        during a specific time and see how successful you are
-                    </p>
-                </div>
+        <div className="flex flex-col w-[100%] py-10">
+            <div className="flex flex-col w-[98%] mr-[1%] ml-[1%] mb-5 justify-center">
+                <img src="/todosImg.png" alt="todo-img" 
+                    className="w-[170px] h-[170px] rounded-[45%] m-auto"  
+                />
+                <h1 className="text-center text-xl xl:text-4xl text-gray-600 my-3 font-bold">ToDo List</h1>
+                <p className="text-center text-sm xl:text-xl text-gray-600 w-[50%] m-auto font-bold mb-3">
+                    This app is usefull for organize your tasks 
+                    during a specific time and see how successful you are
+                </p>
             </div>
-            <div className="flex flex-col w-[98%] mx-[1%] pt-5 border-4 border-blue-400 rounded-md">
-                <h2 className="mb-5 text-3xl font-semibold text-center text-blue-400">My Missions</h2>
+            <div className="flex flex-col w-[98%] mr-[1%] ml-[1%] pt-5 border-4 border-blue-400 rounded-md">
+                <h2 className="mb-5 text-lg xl:text-3xl font-semibold text-center text-blue-400">My Missions</h2>
                 <div className="px-1 py-5 bg-blue-400">
                     <AddMission state={state} addMission={addMission} />
                 </div>
